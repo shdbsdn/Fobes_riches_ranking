@@ -29,3 +29,9 @@ for i in range(10):
 print(data2)
 driver.quit()
 # x = data2[0] y = data2[1]
+
+import matplotlib.pyplot as plt
+plt.bar(range(0,10),data2[1])
+plt.ylabel("dollar")
+plt.xticks(range(0,10),data2[0])
+plt.show()
