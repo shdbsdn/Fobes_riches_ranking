@@ -43,3 +43,11 @@ for i in net_worth:
     k += 1
 print(data)
 
+import matplotlib.pyplot as plt
+
+plt.rc('font',size = 5)
+plt.bar(range(0,10), data[1])
+plt.ylabel("dollar")
+plt.xticks(range(0,10),data[0],rotation = 90)
+plt.show()
+
